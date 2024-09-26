@@ -1,0 +1,26 @@
+  .TituloCaras2 {
+    text-align: center;
+  }
+
+  .TituloCaras1 {
+    color: #FF4800;
+    text-align: center;
+  }
+
+  .TituloFuncionarios1 {
+    color: #FF4800;
+    text-align: center;
+  }
+
+  .TituloFuncionarios2 {
+    text-align: center;
+  }
+
+.linha2{background-color: #F2F2F4;}
+
+.linkLinha2{color: #FF4800;
+text-decoration: underline;}
+
+.linha1{background-color: #F2F2F4;
+border-bottom: 3px solid #FF4800;
+text-align: center;}
