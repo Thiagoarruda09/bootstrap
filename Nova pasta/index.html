@@ -10,67 +10,84 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+    <style>
+        .bg {
+            background-image: linear-gradient(to right, #D7479B, #3730D1);
+        }
+
+        .bg2 {
+            background-color: #151E2E;
+        }
+        .color{color: #7A809B;
+        text-decoration: none;}
+    </style>
+
     <title>Hello, world!</title>
 </head>
 
-<body>
+<body class="mb-0">
     <header class="container d-flex flex-row justify-content-around" style="height: 150px;">
         <div class="col mt-3">
             <img src="appland.jpeg" alt="" width="100vh">
         </div>
         <div class="col">
-            <nav class="navbar navbar-expand-lg navbar">
+            <nav class="navbar navbar-expand-lg navbar-light ">
                 <div class="container-fluid">
-
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-primary" href="#" id="navbarDropdownMenuLink"
-                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    home
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" href="#">features</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdownMenuLink"
-                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    pages
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" href="#">download</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdownMenuLink"
-                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    blog
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
-                            <button class="btn btn-primary ml-2">
-                                sign up
-                            </button>
+                 
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            
+                            <a class="nav-link dropdown-toggle text-primary" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              home
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">features</a>
+                          </li>
+                        <li class="nav-item dropdown">
+                            
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              pages
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">download</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          blog
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
-                    </div>
+                      </li>
+              
+                    </ul>
+                
+                  </div>
+                  <button class="btn btn-primary">sign up</button>
                 </div>
-            </nav>
+           
+              </nav>
         </div>
 
     </header>
@@ -99,7 +116,7 @@
             <div class="row d-flex flex-column">
 
                 <div class=" col-12 d-flex  flex-column justify-content-center">
-                    <h4 >why buy it?</h4>
+                    <h4>why buy it?</h4>
                 </div>
                 <div class=" col-12 d-flex  flex-column justify-content-center">
                     <h1>key features</h1>
@@ -110,55 +127,116 @@
                 </div>
             </div>
         </div>
-        <div class="container mt-5">
-            <div class="row g-1">
-                <div class="col-3 border rounded-2  border-light">
+        <div class="container mt-5 mb-5">
+            <div class="row justify-content-around">
+                <div class="col-3 border rounded-2 border-4-light">
                     <img src="bootstrap.jpeg" alt="">
                     <h3>bootstrap 5.0.3</h3>
                     <p>we've used the latest bootstrap to create fast, responsive</p>
                 </div>
-                <div class="col-3 border rounded-2  border-light">
+                <div class="col-3 border rounded-2  border-4-light">
                     <img src="npm.jpeg" alt="">
                     <h3>npm</h3>
                     <p>we've used npm for easily manage and update all assets</p>
                 </div>
-                <div class="col-3 border rounded-2  border-light">
+                <div class="col-3 border rounded-2  border-4-light">
                     <img src="copin.jpeg" alt="">
                     <h3>Gulp</h3>
                     <p>A toolkit to automate & enhance your workflow</p>
                 </div>
             </div>
             <div class="row justify-content-around mt-3">
-                <div class="col-3 border rounded-2  border-light">
+                <div class="col-3 border rounded-2  border-4-light">
                     <img src="pug.jpeg" alt="">
                     <h3>pug</h3>
                     <p>pug is a javascript compiler for a creating automatic html code</p>
                 </div>
-                <div class="col-3 border rounded-2  border-light">
+                <div class="col-3 border rounded-2  border-4-light">
                     <img src="darkmode.jpeg" alt="">
                     <h3>Dark mode</h3>
                     <p>dark mode now avaible for better user experience</p>
                 </div>
-                <div class="col-3 border rounded-2  border-light">
+                <div class="col-3 border rounded-2  border-4-light">
                     <img src="sass.jpeg" alt="">
                     <h3>SASS</h3>
                     <p>sass is a preprocessor scripting language that is compiled into css</p>
                 </div>
             </div>
             <div class="row justify-content-around mt-3">
-                <div class="col-3 border rounded-2  border-light">
+                <div class="col-3 border rounded-2  border-4-light">
                     <img src="paleta.jpeg" alt="">
                     <h3>modern design</h3>
                     <p>designed and built following the latest trends in the user interface</p>
                 </div>
-                <div class="col-3 border rounded-2  border-light">
+                <div class="col-3 border rounded-2  border-4-light">
                     <img src="raio.jpeg" alt="">
                     <h3>fast loading</h3>
                     <p>this template loads very faster. Coded in sush a way that it loads quicly</p>
                 </div>
             </div>
         </div>
+        <div class="container-fluid mt-5">
+            <div class="row bg text-center pt-5 pb-5">
+                <h1 class="text-white">
+                    More than 680+ websites have been <br> created by the Apland. You can buy it <br> with confidence
+                </h1>
+                <div>
+                    <button class="btn btn-warning">
+                        Purchased now
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg2 d-flex flex-column justify-content-around">
+            <div class="row d-flex flex-row justify-content-around pb-5 pt-5">
+                <div class="col-3">
+                    <div class="col">
+                        <h4 class="text-white">about</h4>
+                        <p class="color"> apland is a completely creative,<br> lightweight, clean & super <br> responsive app landing
+                            page. put <br>
+                            your app sales or promotions into <br> next level with if</p>
+                    </div>
+                    <div class="col">
+                        <h4 class="text-white">our office</h4>
+                        <p class="color">desiging world <br>dhaka, bangladesh <br> (+880) 123456 789</p>
+
+                    </div>
+                </div>
+                <div class="col-3">
+                    <h4 class="text-white">important links</h4>
+                    <p><a href="#" class="color">help</a> </p>
+                    <p><a href="#" class="color">suport</a> </p>
+                    <p><a href="#" class="color">privacy policy</a> </p>
+                    <p><a href="#" class="color"> term & conditions</a> </p>
+                    <p><a href="#" class="color"> call center</a> </p>
+                    <p><a href="#" class="color"> email us</a> </p>
+                    <p><a href="#" class="color">term & conditions</a> </p>
+                    <p><a href="#" class="color"> help center</a> </p>
+                </div>
+                <div class="col-3">
+                    <h4 class="text-white">download out App</h4>
+                    <div class="col mt-3">
+                        <img src="playstore.jpeg" alt="" width="100vh">
+                    </div>
+                    <div class="col mt-3">
+                        <img src="appstore.jpeg" alt="" width="100vh">
+                    </div>
+                    <h4 class="text-white">newsletter</h4>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label"></label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="your email">
+                        <button class="btn btn-warning">subscribe</button>
+                    </div>
+                    
+
+                </div>
+            </div>
+        </div>
     </main>
+    <footer class="bg2 mb-3 text-center border-top border-1-light p-4">
+<p class="color">Site desenvolvido por Thiago Arruda</p>
+    </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
