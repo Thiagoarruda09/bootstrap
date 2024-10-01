@@ -9,9 +9,10 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <style>
         @font-face {
-            font-family: "siri" ;
+            font-family: "siri";
             src: url(fontes/Assistant\,Passion_One\,Sriracha/);
         }
+
         .cor1 {
             background-color: #8DC989;
         }
@@ -28,7 +29,13 @@
         .cor3 {
             background-color: #4FAD64;
         }
-        body{
+        .nav-link:hover{
+            background-color: #004F41;
+            color: #4FAD64;
+            border-radius: 5px;
+        }
+
+        body {
             font-family: 'siri';
         }
     </style>
@@ -51,16 +58,16 @@
                                 aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <div class="collapse navbar-collapse fs-4" id="navbarSupportedContent">
                                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                     <li class="nav-item">
                                         <a class="nav-link" href="#produtos">Produtos</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Galeria</a>
+                                        <a class="nav-link" href="galeria.html">Galeria</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">contatos</a>
+                                        <a class="nav-link" href="contato.html">contatos</a>
                                     </li>
                                 </ul>
                             </div>
@@ -86,14 +93,14 @@
                     <button class="btn btn-success">Veja nossos produtos</button>
                 </div>
                 <div class="col">
-                    <img src="imagens/poteracao.png" alt="" class="img-fluid" width="700px">
+                    <img src="imagens/poteracao.png" alt="" class="img-fluid d-none d-sm-block" width="700px">
                 </div>
             </div>
         </div>
-        <div class="container mb-5 mt-5 pb-5 pt-5">
+        <div class="container-fluid mb-5 mt-5 pb-5 pt-5">
             <div class="row">
                 <div class="col fs-5">
-                    <h1 class="text-center">Bem-vindo ao Petshop <span class="fonteCor1">Melhor Amigo!</span></h1>
+                    <h1 class="text-center border-bottom border-success border-3">Bem-vindo ao Petshop <span class="fonteCor1">Melhor Amigo!</span></h1>
                     <p>No Petshop "Melhor Amigo", nós entendemos que seu animal de estimação é mais do que apenas um
                         bichinho, é um membro especial da sua <span class="fonteCor1"><strong>família</strong></span>.
                         Com isso em mente, estamos comprometidos em
@@ -119,9 +126,9 @@
         </div>
         <h1 class="text-center">Venha conhecer nossos <span class="fonteCor1"><strong>Produtos</strong></span></h1>
         <div class="container mb-4 mt-5 pt-5 pb-5" id="produtos">
-            <div class="row">
+            <div class="row d-flex flex-column flex-sm-row">
                 <div class="col">
-                    <h3 class="m-2 fonteCor1">Limpeza</h3>
+                    <h3 class="m-2 fonteCor1"><strong>Limpeza</strong></h3>
                     <div class="border rounded shadow">
                         <article class="m-2">
                             <h3>shampoo Antipulgas</h3>
@@ -132,36 +139,40 @@
                     </div>
                 </div>
                 <div class="col fonteCor1">
-                    <h3 class="m-2">Limpeza</h3>
+                    <h3 class="m-2"><strong>Tosa</strong></h3>
                     <div class="border rounded shadow">
                         <article class="m-2">
-                            <h3>shampoo Antipulgas</h3>
-                            <p>Shampoo para limpeza profunda e combate a pulgas.</p>
-                            <p class="fonteCor2"><strong>R$ 29,90</strong></p>
+                            <h3>Máquina de Tosa Profissional</h3>
+                            <p>Máquina silenciosa e precisa, ideal para tosa em casa.</p>
+                            <p class="fonteCor2"><strong>R$ 199,90</strong></p>
                             <button class="btn btn-success">comprar</button>
                         </article>
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row d-flex flex-column flex-sm-row">
                 <div class="col">
-                    <h3 class="m-2 fonteCor1">Limpeza</h3>
+                    <h3 class="m-2 fonteCor1"><strong>Ração</strong></h3>
                     <div class="border rounded shadow">
                         <article class="m-2">
-                            <h3>shampoo Antipulgas</h3>
-                            <p>Shampoo para limpeza profunda e combate a pulgas.</p>
-                            <p class="fonteCor2"><strong>R$ 29,90</strong></p>
+                            <h3>Ração Premium Cães Adultos
+                            </h3>
+                            <p>Ração premium para cães adultos, sabor frango e carne.</p>
+                            <p class="fonteCor2"><strong>R$ 149,90</strong></p>
                             <button class="btn btn-success">comprar</button>
                         </article>
                     </div>
                 </div>
                 <div class="col">
-                    <h3 class="m-2 fonteCor1">Limpeza</h3>
+                    <h3 class="m-2 fonteCor1"><strong>Brinquedos</strong></h3>
                     <div class="border rounded shadow">
                         <article class="m-2">
-                            <h3>shampoo Antipulgas</h3>
-                            <p>Shampoo para limpeza profunda e combate a pulgas.</p>
-                            <p class="fonteCor2"><strong>R$ 29,90</strong></p>
+                            <h3>Brinquedo de Mastigação
+                            </h3>
+                            <p>Brinquedo durável para mastigação, ideal para cães ativos.
+
+                            </p>
+                            <p class="fonteCor2"><strong>R$ 49,90</strong></p>
                             <button class="btn btn-success">comprar</button>
                         </article>
                     </div>
@@ -170,25 +181,25 @@
         </div>
         <div class="container-fluid mt-5 cor1 pt-5 pb-5">
 
-            <div class="row d-flex justify-content-around">
-                <div class="col-1">
+            <div class="row d-flex flex-column flex-sm-row justify-content-center justify-sm-around">
+                <div class="col-1 d-none d-md-block">
                     <img src="imagens/pata.png" alt="" width="70px">
                 </div>
-                <div class="col-5 cor3 rounded">
+                <div class="col-5 m-2 cor3 rounded shadow">
                     <h3>contato</h3>
                     <p>petshop@melhoramigo.com</p>
                     <p>(31) 9 9999-9999</p>
                 </div>
-                <div class="col-5 cor3 rounded">
-                    <h3>contato</h3>
-                    <p>petshop@melhoramigo.com</p>
-                    <p>(31) 9 9999-9999</p>
+                <div class="col-5 m-2 cor3 rounded shadow">
+                    <h3>Horários</h3>
+                    <p>aberto todos os dias</p>
+                    <p>9:00 às 17:00</p>
                 </div>
             </div>
         </div>
     </main>
     <footer class="m-0 p-0 cor2 text-white text-center">
-        <p>© PetShop Melhor Amigo 2024 - Desenvolvido por Gabriel Iuri</p>
+        <p>© PetShop Melhor Amigo 2024 - Desenvolvido por Thiago Arruda</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
