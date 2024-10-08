@@ -10,17 +10,38 @@
         .fonteCor1 {
             color: #71381D;
         }
+        .bg1{
+            background-color: #71381D;
+        }
+        .bg2{
+            background-image: linear-gradient(to right, black, #71381D);
+        }
+        .hover:hover{
+            background-color: #FFC107;
+            border-radius: 5px;
+            
+        }
+
+        .hover2:hover{
+            box-shadow: 10px 10px 10px #71381D;
+        }
+        a:hover{
+            color: #71381D;
+        }
+        .borda{
+            
+        }
     </style>
 
     <title>hamburgueria</title>
 </head>
 
 <body style=" background-color: black;">
-    <header>
+    <header class="bg2">
         <div class="container pb-4">
             <div class="row">
-                <div class="col col-2 mt-5">
-                    <img src="imagens/burguer.jpeg" alt="">
+                <div class="col col-2 mt-5 d-none d-sm-block">
+                    <img src="imagens/burguer.jpeg" class="rounded-2" alt="">
                 </div>
                 <div class="col col-4 offset-2 mt-5">
                     <nav class="navbar navbar-expand-lg navbar-light ">
@@ -34,13 +55,13 @@
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                     <li class="nav-item">
-                                        <a class="nav-link text-white" href="#produtos">inicio</a>
+                                        <a class="nav-link text-white hover" href="#produtos">inicio</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link text-white" href="galeria.html">cardapio</a>
+                                        <a class="nav-link text-white hover" href="galeria.html">cardapio</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link text-white" href="contato.html">avaliações</a>
+                                        <a class="nav-link text-white hover" href="contato.html">avaliações</a>
                                     </li>
                                 </ul>
                             </div>
@@ -73,85 +94,85 @@
                                 style="width: 5vh;"></button>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col d-none d-sm-block">
                     <img src="imagens/hamburguer fundo.jpeg" alt="">
                 </div>
             </div>
         </div>
         <h1 class="text-warning text-center mt-5">Cardápio</h1>
         <h2 class="fonteCor1 text-center mt-5">Hamburgueres Artesanais</h2>
-        <div class="container-fluid mt-5">
-            <div class="row d-flex flex-row  justify-content-around mt-5">
-                <div class="col col-3">
+        <div class="container mt-5">
+            <div class="row d-flex flex-column flex-lg-row  justify-content-around mt-5">
+                <div class="col col-8 col-lg-3 ">
                     <img src="imagens/hamburguer1.jpeg " class="rounded-3" alt="">
                     <h3 class="text-white">Chiken burguer</h3>
                     <p class="text-white">hamburguer de frango, cebola caramelizada, queijo americano, molho rosé e
                         rúcula</p>
                     <div class="col d-flex flex-row">
-                        <div class="col col-1"><img src="imagens/icons8-star-48.png" alt="" style="width: 5vh;"></div>
-                        <div class="col col-1"><img src="imagens/icons8-star-48.png" alt="" style="width: 5vh;"></div>
-                        <div class="col col-1"><img src="imagens/icons8-star-48.png" alt="" style="width: 5vh;"></div>
-                        <div class="col col-1"><img src="imagens/icons8-star-48.png" alt="" style="width: 5vh;"></div>
-                        <div class="col col-1"><img src="imagens/icons8-star-48.png" alt="" style="width: 5vh;"></div>
+                        <div class="col col-2 col-sm-1"><img src="imagens/icons8-star-48.png" alt="" style="width: 5vh;"></div>
+                        <div class="col col-2 col-sm-1"><img src="imagens/icons8-star-48.png" alt="" style="width: 5vh;"></div>
+                        <div class="col col-2 col-sm-1"><img src="imagens/icons8-star-48.png" alt="" style="width: 5vh;"></div>
+                        <div class="col col-2 col-sm-1"><img src="imagens/icons8-star-48.png" alt="" style="width: 5vh;"></div>
+                        <div class="col col-2 col-sm-1"><img src="imagens/icons8-star-48.png" alt="" style="width: 5vh;"></div>
                     </div>
-                    <div class="col d-flex flex-row">
-                        <p class="text-white">R$26,00</p>
+                    <div class="col d-flex flex-row mt-3">
+                        <p class="text-white " >R$26,00</p>
                         <button class="btn btn-warning col-2 offset-1"><img src="imagens/icons8-shopping-basket-80.png"
                                 alt="" style="width: 4vh;"></button>
                     </div>
                 </div>
-                <div class="col col-3">
+                <div class="col col-8 col-lg-3">
                     <img src="imagens/WhatsApp Image 2024-10-08 at 11.34.13.jpeg " class="rounded-3" alt="">
                     <h3 class="text-white">Chiken burguer</h3>
                     <p class="text-white">hamburguer de frango, cebola caramelizada, queijo americano, molho rosé e
                         rúcula</p>
                     <div class="col d-flex flex-row">
-                        <div class="col col-1"><img src="imagens/icons8-star-48.png" alt="" style="width: 5vh;"></div>
-                        <div class="col col-1"><img src="imagens/icons8-star-48.png" alt="" style="width: 5vh;"></div>
-                        <div class="col col-1"><img src="imagens/icons8-star-48.png" alt="" style="width: 5vh;"></div>
-                        <div class="col col-1"><img src="imagens/icons8-star-48.png" alt="" style="width: 5vh;"></div>
-                        <div class="col col-1"><img src="imagens/icons8-star-48.png" alt="" style="width: 5vh;"></div>
+                        <div class="col col-2 col-sm-1"><img src="imagens/icons8-star-48.png" alt="" style="width: 5vh;"></div>
+                        <div class="col col-2 col-sm-1"><img src="imagens/icons8-star-48.png" alt="" style="width: 5vh;"></div>
+                        <div class="col col-2 col-sm-1"><img src="imagens/icons8-star-48.png" alt="" style="width: 5vh;"></div>
+                        <div class="col col-2 col-sm-1"><img src="imagens/icons8-star-48.png" alt="" style="width: 5vh;"></div>
+                        <div class="col col-2 col-sm-1"><img src="imagens/icons8-star-48.png" alt="" style="width: 5vh;"></div>
                     </div>
-                    <div class="col d-flex flex-row">
-                        <p class="text-white">R$26,00</p>
+                    <div class="col d-flex flex-row mt-3">
+                        <p class="text-white " >R$26,00</p>
                         <button class="btn btn-warning col-2 offset-1"><img src="imagens/icons8-shopping-basket-80.png"
                                 alt="" style="width: 4vh;"></button>
                     </div>
 
                 </div>
-                <div class="col col-3">
+                <div class="col col-8 col-lg-3">
                     <img src="imagens/hamburguer3.jpeg " class="rounded-3" alt="">
                     <h3 class="text-white">Chiken burguer</h3>
                     <p class="text-white">hamburguer de frango, cebola caramelizada, queijo americano, molho rosé e
                         rúcula</p>
                     <div class="col d-flex flex-row">
-                        <div class="col col-1 "><img src="imagens/icons8-star-48.png" alt="" style="width: 5vh;"></div>
-                        <div class="col col-1 "><img src="imagens/icons8-star-48.png" alt="" style="width: 5vh;"></div>
-                        <div class="col col-1 "><img src="imagens/icons8-star-48.png" alt="" style="width: 5vh;"></div>
-                        <div class="col col-1 "><img src="imagens/icons8-star-48.png" alt="" style="width: 5vh;"></div>
-                        <div class="col col-1 "><img src="imagens/icons8-star-48.png" alt="" style="width: 5vh;"></div>
+                        <div class="col col-2 col-sm-1 "><img src="imagens/icons8-star-48.png" alt="" style="width: 5vh;"></div>
+                        <div class="col col-2 col-sm-1 "><img src="imagens/icons8-star-48.png" alt="" style="width: 5vh;"></div>
+                        <div class="col col-2 col-sm-1 "><img src="imagens/icons8-star-48.png" alt="" style="width: 5vh;"></div>
+                        <div class="col col-2 col-sm-1 "><img src="imagens/icons8-star-48.png" alt="" style="width: 5vh;"></div>
+                        <div class="col col-2 col-sm-1 "><img src="imagens/icons8-star-48.png" alt="" style="width: 5vh;"></div>
                     </div>
-                    <div class="col d-flex flex-row">
-                        <p class="text-white">R$26,00</p>
+                    <div class="col d-flex flex-row mt-3">
+                        <p class="text-white " >R$26,00</p>
                         <button class="btn btn-warning col-2 offset-1"><img src="imagens/icons8-shopping-basket-80.png"
                                 alt="" style="width: 4vh;"></button>
                     </div>
 
                 </div>
-                <div class="col col-3">
+                <div class="col col-8 col-lg-3">
                     <img src="imagens/hamburguer4.jpeg " class="rounded-3" alt="">
                     <h3 class="text-white">Chiken burguer</h3>
                     <p class="text-white">hamburguer de frango, cebola caramelizada, queijo americano, molho rosé e
                         rúcula</p>
                     <div class="col d-flex flex-row">
-                        <div class="col col-1"><img src="imagens/icons8-star-48.png" alt="" style="width: 5vh;"></div>
-                        <div class="col col-1"><img src="imagens/icons8-star-48.png" alt="" style="width: 5vh;"></div>
-                        <div class="col col-1"><img src="imagens/icons8-star-48.png" alt="" style="width: 5vh;"></div>
-                        <div class="col col-1"><img src="imagens/icons8-star-48.png" alt="" style="width: 5vh;"></div>
-                        <div class="col col-1"><img src="imagens/icons8-star-48.png" alt="" style="width: 5vh;"></div>
+                        <div class="col col-2 col-sm-1"><img src="imagens/icons8-star-48.png" alt="" style="width: 5vh;"></div>
+                        <div class="col col-2 col-sm-1"><img src="imagens/icons8-star-48.png" alt="" style="width: 5vh;"></div>
+                        <div class="col col-2 col-sm-1"><img src="imagens/icons8-star-48.png" alt="" style="width: 5vh;"></div>
+                        <div class="col col-2 col-sm-1"><img src="imagens/icons8-star-48.png" alt="" style="width: 5vh;"></div>
+                        <div class="col col-2 col-sm-1"><img src="imagens/icons8-star-48.png" alt="" style="width: 5vh;"></div>
                     </div>
-                    <div class="col d-flex flex-row">
-                        <p class="text-white">R$26,00</p>
+                    <div class="col d-flex flex-row mt-3">
+                        <p class="text-white " >R$26,00</p>
                         <button class="btn btn-warning col-2 offset-1"><img src="imagens/icons8-shopping-basket-80.png"
                                 alt="" style="width: 4vh;"></button>
                     </div>
@@ -177,16 +198,21 @@
                 </div>
             </div>
         </div>
-        <img src="imagens/wave.svg" alt="" class="mt-5">
+    
 
     </main>
-    <footer class="d-flex flex-row justify-content-between">
-        <div class="col">© 2024 Hamburgueria do Chef</div>
-        <div class="col">Endereço: Campinas SP, rua 13 de maio</div>
-        <div class="col">
-          <button><img src="imagens/icons8-facebook-50.png" alt=""></button>
-          <button><img src="imagens/icons8-instagram-50.png" alt=""></button>
-          <button><img src="imagens/icons8-whatsapp-50.png" alt=""></button>
+    <footer class="bg2 mt-5">
+            <img src="imagens/wave.svg" alt="">
+        <div class="container">
+            <div class="row d-flex justify-content-between">
+                <div class="col"><p class="text-white">© 2024 Hamburgueria do Chef</p></div>
+                <div class="col"><p class="text-white">Endereço: Campinas SP, rua 13 de maio</p></div>
+                <div class="col">
+                  <button class="btn btn-warning"><img src="imagens/icons8-facebook-50.png" style="width: 5vh;" alt=""></button>
+                  <button class="btn btn-warning"><img src="imagens/icons8-instagram-50.png" style="width: 5vh;" alt=""></button>
+                  <button class="btn btn-warning"><img src="imagens/icons8-whatsapp-50.png" style="width: 5vh;" alt=""></button>
+                </div>
+            </div>
         </div>
     </footer>
 
