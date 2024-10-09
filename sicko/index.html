@@ -42,9 +42,15 @@
             border-top: 2px solid #868BA6;
             border-bottom: 2px solid #868BA6;
         }
+        .radius{
+            border-radius: 5px 5px 0px 0px;
+        }
 
         .corBotão {
             background-color: #5D5D5D;
+        }
+        .corBotão2{
+            background-color: #9BA0BF;
         }
 
         .link {
@@ -52,9 +58,7 @@
             color: #5D5D5D;
             text-decoration: none;
             font-size: 20px;
-            padding-right: 145px;
-            padding-left: 150px;
-            padding-bottom: 10px;
+      
         }
 
         .link2 {
@@ -63,9 +67,7 @@
             color: #5D5D5D;
             text-decoration: none;
             font-size: 20px;
-            padding-right: 120px;
-            padding-left: 150px;
-            padding-bottom: 10px;
+         
         }
 
         .link3 {
@@ -73,9 +75,11 @@
             color: #5D5D5D;
             text-decoration: none;
             font-size: 20px;
-            padding-right: 170px;
-            padding-left: 150px;
-            padding-bottom: 10px;
+           
+        }
+        a{
+            text-decoration: none;
+            color: #5D5D5D;
         }
     </style>
 </head>
@@ -94,13 +98,13 @@
             </div>
         </div>
     </header>
-    <nav class="m-0 cor2 borda" style="height: 200px;">
+    <nav class="m-0 cor2 borda" style="height: 150px;">
         <div class="container">
             <div class="row d-flex flex-row justify-content-around">
-                <div class="col">
+                <div class="col col-2">
                     <img src="imagens/sicko assinatura.png" alt="" style="width: 30vh;">
                 </div>
-                <div class="col align-self-center fs-4">
+                <div class="col col-4 align-self-center fs-5">
                     <nav class="navbar navbar-expand-lg navbar-light ">
                         <div class="container-fluid">
                             <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="collapse"
@@ -135,37 +139,43 @@
                         </div>
                     </nav>
                 </div>
-                <div class="col col-2 align-self-center"><button class="btn corBotão fs-4 fonteCor2">contato</button>
+                <div class="col col-2 align-self-center"><button class="btn corBotão fs-5 fonteCor2">contato</button>
                 </div>
             </div>
         </div>
     </nav>
     <main class="m-0">
-        <div class="col  mb-5 fundo"><img src="imagens/SICKO-[4].png" alt="" style="width: 85vh;"
-                class="col col-6 offset-4"></div>
+        <div class="col  mb-3 fundo"><img src="imagens/SICKO-[4].png" alt="" 
+                class="col col-6 offset-3"></div>
         <br><br>
-        <div class="container mt-5">
+        <div class="container mt-3">
             <div class="row d-flex flex-row justify-content-center">
                 <div class="col  col-4 mt-5">
                     <div class="row d-flex flex-column">
 
-                        <div class="col"><img src="imagens/muito-brabo.png" style="width: 50vh;" class="borda"></div>
-                        <div class="col"><a href="#" class="link">Nas ruas</a></div>
+                        <div class="col"><img src="imagens/muito-brabo.png"  class="borda col col-10"></div>
+                        <div class="col ">
+                          <button class="btn corBotão2 col col-10 rounded-0"><a href="">nas ruas</a></button>
+                        </div>
                     </div>
 
 
                 </div>
                 <div class="col col-4 mt-5">
                     <div class="row d-flex flex-column">
-                        <div class="col"><img src="imagens/PUMAPJL.png" style="width: 50vh;" alt="" class="borda"></div>
-                        <div class="col"><a href="#" class="link3">Artes</a></div>
+                        <div class="col"><img src="imagens/PUMAPJL.png"  alt="" class="borda col col-10"></div>
+                        <div class="col ">
+                            <button class="btn corBotão2 col col-10 rounded-0"><a href="#" >Artes</a></button>
+                        </div>
                     </div>
                 </div>
                 <div class="col col-4    mt-5">
                     <div class="row d-flex flex-column">
 
-                        <div class="col"><img src="imagens/pirangagem.png" style="width: 50vh;" class="borda"></div>
-                        <div class="col"><a href="#" class="link2">exposições</a></div>
+                        <div class="col"><img src="imagens/pirangagem.png"  class="borda col col-10"></div>
+                        <div class="col">
+                            <button class="btn corBotão2 col col-10 rounded-0"><a href="#">exposições</a></button>
+                        </div>
                     </div>
 
 
@@ -177,12 +187,22 @@
 
     </main>
     <br><br><br><br><br><br><br>
-    <div class="container">
-        <h1 class="text-center mb-5">Sicko, o Artista</h1>
-        <div class="row d-flex flex-row">
-            <div class="col"><img src="imagens/WhatsApp Image 2024-10-09 at 14.56.46.jpeg" alt="" style="width: 60vh;" class="rounded-3"></div>
-            <div class="col">
-                <p class="align-self-center">
+    <h1 class="text-center mb-5">Sicko, o Artista</h1>
+    <div class="container-fluid cor1 pt-5">
+       
+        <div class="row d-flex flex-row justify-content-around">
+            <div class="col col-4">
+                <div class="row d-flex flex-column">
+                    <div class="col mt-5">
+                        <img src="imagens/Screenshot_5.png" alt="" class="radius col col-11">
+                    </div>
+                    <div class="col">
+                        <button class="btn corBotão2 col col-11 rounded-0"" ><a href="">confira o portifolio do Sicko</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-6">
+                <p class="align-self-center col col-10">
                     Sicko, um artista urbano de Fortalcity, encarna a essência da arte de rua underground com
                     autenticidade e uma visão única. Desde cedo, ele foi atraído pelas cores vibrantes e pela liberdade
                     de expressão que as ruas oferecem, tornando-as seu principal espaço de criação. Para Sicko, a arte
@@ -207,8 +227,8 @@
         </div>
     </div>
     <br><br><br><br><br>
-    <footer class="cor3 borda" style="height: 200px;">
-        <div class="container">
+    <footer class="cor3 borda" style="height: 170px;">
+        <div class="container mb-0">
             <div class="row d-flex flex-row">
                 <div class="col">
                     <img src="imagens/sicko assinatura.png" alt="" style="width: 30vh;">
@@ -217,7 +237,7 @@
                     <p>contato:</p>
                     <p>renanben10@hotmail.com</p>
                 </div>
-                <div class="col align-self-center">
+                <div class="col align-self-center m-0">
                     <p>whatsapp</p>
                     <a
                         href="https://api.whatsapp.com/send?phone=5585986646411&text=Ol%C3%A1%20Sicko,%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20de%20arte"><img
