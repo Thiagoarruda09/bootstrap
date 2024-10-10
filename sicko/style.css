@@ -105,6 +105,9 @@ a {
 
     border-radius: 5px;
 }
+.hover2:hover{
+    box-shadow: 5px 5px 5px #5D5D5D;
+}
 
 .fonteGrande {
     font-size: 90px;
