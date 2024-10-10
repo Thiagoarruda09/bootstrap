@@ -11,56 +11,63 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
-<style>
-.tamanho{
-   
-    margin-bottom: 410px;
 
-}
-</style>
 
-<body class="bgImg">
-    <header class="">
-        <div class="container-fluid fixed pb-4 cor2">
-            <div class="row d-flex flex-row">
-                <div class="col col-2 d-none d-sm-block align-self-center">
-                    <img src="imagens/sicko assinatura.png"  alt="" style="width: 30vh;">
+<header>
+    
+    <nav class="m-0 pt-0 cor2 borda container-fluid fixed"  >
+
+        <div class="container-fluid">
+            <div class="row d-flex flex-row justify-content-around">
+                <div class="col col-2 align-self-top pt-2 d-none d-sm-block">
+                    <a href="#"><img src="imagens/sicko assinatura.png" alt="" style="width: 30vh;"
+                            class="align-self-top "></a>
                 </div>
-                <div class="col col-6 offset-1 ">
-                    <nav class="navbar navbar-expand-lg navbar-light align-self-center">
+                <div class="col col-8 align-self-top fs-5">
+                    <nav class="navbar navbar-expand-lg navbar-light ">
                         <div class="container-fluid">
-
-                            <button class="navbar-toggler corBotão col-12 offset-6" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
+                            <button class="navbar-toggler cor6 col-12 col-sm-4" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                                aria-controls="navbarSupportedContent" aria-expanded="false"
+                                aria-label="Toggle navigation " onclick="adicionarClasse()"">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                     <li class="nav-item">
-                                        <a class="nav-link text-white" href="#inicio"><p class="fonteCor4 hover p-1 urban fs-3" >inicio</p></a>
+                                        <a class="nav-link text-white " href="#inicio">
+                                            <p class="fonteCor4 hover p-1 urban fs-3">Inicio</p>
+                                        </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link text-white" href="#biografia"><p class="fonteCor4 hover p-1 urban fs-3" >Biografia</p></a>
+                                        <a class="nav-link text-white " href="#biografia">
+                                            <p class="fonteCor4 hover p-1 urban fs-3">Biografia</p>
+                                        </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link text-white" href="contato.html"><p class="fonteCor4 hover p-1 urban fs-3" >Artes</p></a>
+                                        <a class="nav-link text-white " href="#contatos">
+                                            <p class="fonteCor4 hover p-1 urban fs-3">Artes</p>
+                                        </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link text-white" href="contato.html"><p class="fonteCor4 hover p-1 urban fs-3" >exposicao</p></a>
+                                        <a class="nav-link text-white " href="galeria.html">
+                                            <p class="fonteCor4 hover p-1 urban fs-3">Exposicao</p>
+                                        </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link text-white" href="#contatos"><p class="fonteCor4 hover p-1 urban fs-3" >redes sociais</p></a>
+                                        <a class="nav-link text-white " href="#contatos">
+                                            <p class="fonteCor4 hover p-1 urban fs-3">Redes sociais</p>
+                                        </a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </nav>
                 </div>
-              
             </div>
         </div>
-    </header>
+    </nav>
+</header>
         </div>
       
             <div class="col  mb-3 fundo cor6 shadow d-none d-sm-block"><img src="imagens/SICKO-[4].png" alt=""
@@ -207,11 +214,6 @@
 
 
 </body>
-<script>
-       function adicionarClasse(){
-        let =document.getElementById('nav')
-        nav.classList.add('tamanho')
-    }
-</script>
+
 
 </html>
