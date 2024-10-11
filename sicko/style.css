@@ -61,7 +61,7 @@
     background-color: #36403A;
 }
 .fonteCor9{
-    color:#5D5D5D;
+    color:#36403A;
 }
 
 .borda {
@@ -127,6 +127,12 @@ a {
 }
 .hover3:hover{
     box-shadow: 5px 5px 5px #5D5D5D;
+}
+.hover4:hover{
+    background-color: #36403A;
+    color: #732937;
+
+    border-radius: 5px;
 }
 
 .fonteGrande {
