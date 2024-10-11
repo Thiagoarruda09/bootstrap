@@ -9,25 +9,31 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <link rel="stylesheet" href="style.css">
+    <style>
+        .teste{
+            background-color:#147DD9
+        }
+    </style>
 </head>
 
 <body>
     <header>
 
-        <nav class="m-0 pt-0 cor2 borda container-fluid fixed">
-    
+        <nav class="m-0 pt-0 cor2 borda container-fluid fixed" id="nav">
+
             <div class="container-fluid">
                 <div class="row d-flex flex-row justify-content-around">
-                    <div class="col col-2 align-self-top pt-2 d-none d-sm-block">
-                        <a href="#"><img src="imagens/sicko assinatura.png" alt="" style="width: 30vh;"
-                                class="align-self-top "></a>
+                    <div class="col col-2 align-self-top pt-2 d-none d-sm-block" >
+                        <a href="#"><img src="imagens/assinatura1.png" alt="" style="width: 30vh;"
+                                class="align-self-top " id="assinatura"></a>
                     </div>
                     <div class="col col-8 align-self-top fs-5">
                         <nav class="navbar navbar-expand-lg navbar-light ">
                             <div class="container-fluid">
-                                <button class="navbar-toggler cor6 col-12 col-sm-4" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                    aria-expanded="false" aria-label="Toggle navigation " onclick="adicionarClasse()"">
+                                <button class="navbar-toggler cor6 col-12 col-sm-4" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                                    aria-controls="navbarSupportedContent" aria-expanded="false"
+                                    aria-label="Toggle navigation ">
                                     <span class=" navbar-toggler-icon"></span>
                                 </button>
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -66,7 +72,38 @@
             </div>
         </nav>
     </header>
-    <main style="height: 500px;">
+    <main>
+<div class="container-fluid w-5 pt-5">
+<div class="row d-flex flex-row justify-content-center  w-5 pt-5">
+    <div class="col w-1 col-12 m-1" style="width: 100vh;">
+
+        <img src="imagens/grafite.jpeg" alt="" style="width: 100vh;" onclick="trocarImagem()">
+    </div>
+    <div class="col w-1 col-12 m-1" style="width: 100vh;">
+        <img src="imagens/grafite7.jpeg" alt="" style="width: 100vh;">
+    </div>
+</div>
+<div class="row d-flex flex-row justify-content-center">
+    <div class="col col-4 m-1" style="width: 60vh;">
+        <img src="imagens/grafite4.jpeg" alt="" style="width: 60vh;">
+    </div>
+    <div class="col col-4 m-1" style="width: 60vh;">
+        <img src="imagens/grafite6.jpeg" alt="" style="width: 60vh;">
+    </div>
+    <div class="col col-4 m-1" style="width: 60vh;">
+        <img src="imagens/grafite5.jpeg" alt="" style="width: 60vh;">
+    </div>
+    <div class="row d-flex flex-row justify-content-center  w-5 ">
+        <div class="col w-1 col-12 m-1" style="width: 100vh;">
+    
+            <img src="imagens/grafite8.jpeg" alt="" style="width: 100vh;">
+        </div>
+        <div class="col w-1 col-12 m-1" style="width: 100vh;">
+            <img src="imagens/grafite9.jpeg" alt="" style="width: 100vh;">
+        </div>
+    </div>
+</div>
+</div>
 
     </main>
     <footer class="cor3 borda">
@@ -75,10 +112,10 @@
                 <div class="col col-2 align-self-center">
                     <a href="#"><img src="imagens/destaque.png" alt="" style="width: 30vh;"></a>
                 </div>
-    
-    
-    
-    
+
+
+
+
                 <div class="col col-2 align-self-center"><a href="#" class="fonteCor4" style="text-decoration: none; ">
                         <p class="poppins">Email para contato: carlosrenan010@gmail.com</p>
                     </a></div>
@@ -95,8 +132,8 @@
                                 src="imagens/icons8-whatsapp-50.png" alt="" style="width: 5vh;"></a>
                     </button>
                 </div>
-    
-    
+
+
             </div>
         </div>
     </footer>
@@ -104,5 +141,18 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 </body>
+<script>
+   
+    let assinatura1 = "imagens/assinatura1.png"
+    let assinatura2 = "imagens/assinatura3.png"
+    function trocarImagem() {
+        let nav=document.getElementById('nav')
+        nav.classList.add('teste')
+        let assinatura = document.getElementById("assinatura")
+        if (assinatura.getAttribute('src') == assinatura1) {
+            assinatura.setAttribute('src', assinatura2)
+        } 
+    }
+</script>
 
 </html>
