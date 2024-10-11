@@ -68,6 +68,11 @@
     border-top: 2px solid #868BA6;
     border-bottom: 2px solid #868BA6;
 }
+.borda2{
+    border-top: 2px solid #36403A;
+    border-bottom: 2px solid #36403A;
+
+}
 
 .radius {
     border-radius: 5px 5px 0px 0px;
